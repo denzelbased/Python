@@ -1,0 +1,14 @@
+//Задание №1
+
+import math
+
+e = int(input('e: '))
+f = int(input('f: '))
+g = int(input('g: '))
+h = int(input('h: '))
+
+a = math.sqrt(abs(e - (3/f))**3) + g
+b = math.sin(e) + (math.cos(h)**3)*h
+c = (33*g)/ (e*f-3)
+
+print(f'a = {a}, b = {b}, c = {c}')
