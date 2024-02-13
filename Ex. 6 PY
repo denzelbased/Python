@@ -1,0 +1,24 @@
+//Задание №6
+
+def sum_of_digits(number):
+    sum = 0
+    while number > 0:
+        digit = number % 10
+        sum += digit
+        number = number // 10
+    return sum
+
+def compare_digit_sums(num1, num2):
+    sum1 = sum_of_digits(num1)
+    sum2 = sum_of_digits(num2)
+    if sum1 > sum2:
+        return f"Сумма цифр числа {num1} больше, чем сумма цифр числа {num2}"
+    elif sum2 > sum1:
+        return f"Сумма цифр числа {num2} больше, чем сумма цифр числа {num1}"
+    else:
+        return "Суммы цифр обоих чисел равны"
+
+number1 = 12345
+number2 = 6789
+result = compare_digit_sums(number1, number2)
+print(result)
